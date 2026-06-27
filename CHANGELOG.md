@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [6.2.4]
 
 - Refined contrast in certain cases to better align with the main background.
 - Clean up `pluginIcon.svg` (remove unused namespace, simplify structure)

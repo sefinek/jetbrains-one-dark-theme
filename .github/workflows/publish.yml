@@ -23,4 +23,4 @@ jobs:
       - name: Publish plugin
         run: ./gradlew publishPlugin
         env:
-          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          ORG_GRADLE_PROJECT_intellijPlatformPublishingToken: ${{ secrets.PUBLISH_TOKEN }}
