@@ -9,4 +9,4 @@ The palette has been slightly darkened and cooled down. The main editor backgrou
 1. Go to [Releases](https://github.com/sefinek/jetbrains-one-dark-theme/releases) to download the compiled plugin.
 2. Go to `Settings > Plugins > Install Plugin from Disk` and select the downloaded ZIP archive.
 3. Go to `Settings > Appearance & Behavior > Appearance` and select one of the new themes from the list.
-4. Enable `Settings > Advanced Settings > Enable Islands UI for custom themes`.
+4. Enable `Settings > Advanced Settings > Enable Islands UI for custom themes` if you use **One Dark Vivid Islands**.
