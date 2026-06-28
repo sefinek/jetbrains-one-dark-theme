@@ -12,7 +12,7 @@
     "infoForeground": "#7e8491",
     "foregroundColor": "#abb2bf",
     "notificationBackground": "#3d424b",
-    "selectionBackground": "#323844",
+    "selectionBackground": "#303640",
     "selectionForeground": "#d7dae0",
     "borderTransparent": "#00000000",
     "hoverBackground": "#3d424b"
@@ -51,7 +51,7 @@
     "MainWindow.background": "backgroundColor",
     "MainWindow.Tab": {
       "background": "panelColor",
-      "selectedBackground": "#323844",
+      "selectedBackground": "#303640",
       "hoverBackground": "#3d424b",
       "separatorColor": "borderColor"
     },
@@ -71,7 +71,7 @@
       "background": "panelColor",
       "borderColor": "panelColor",
       "Button": {
-        "hoverBackground": "#323844",
+        "hoverBackground": "#303640",
         "selectedBackground": "#3d424b",
         "selectedForeground": "#abb2bf"
       },
@@ -83,16 +83,16 @@
       "HeaderTab": {
         "underlineColor": "accentColor",
         "inactiveUnderlineColor": "borderTransparent",
-        "hoverBackground": "#323844",
+        "hoverBackground": "#303640",
         "hoverInactiveBackground": "#3d424b",
-        "selectedBackground": "#323844",
+        "selectedBackground": "#303640",
         "selectedInactiveBackground": "#3d424b"
       },
       "Stripe": {
         "background": "backgroundColor",
         "borderColor": "borderTransparent",
         "Button": {
-          "hoverBackground": "#323844",
+          "hoverBackground": "#303640",
           "selectedBackground": "#3d424b",
           "selectedForeground": "#abb2bf"
         }
@@ -116,7 +116,7 @@
     "StatusBar": {
       "background": "backgroundColor",
       "borderColor": "borderTransparent",
-      "hoverBackground": "#323844",
+      "hoverBackground": "#303640",
       "Widget.hoverBackground": "#3d424b"
     },
     "EditorTabs": {
@@ -127,7 +127,7 @@
       "underlineColor": "accentColor",
       "inactiveUnderlinedTabBorderColor": "borderColor",
       "inactiveUnderlinedTabBackground": "backgroundColor",
-      "hoverBackground": "#323844",
+      "hoverBackground": "#303640",
       "inactiveUnderlineColor": "accentColor",
       "tabInsets": "-7,8,-7,8",
       "tabInsets.compact": "-2,6,-2,4",
@@ -221,8 +221,8 @@
     "Panel.background": "backgroundColor",
     "Plugins": {
       "background": "backgroundColor",
-      "hoverBackground": "#323844",
-      "SectionHeader.background": "#323844"
+      "hoverBackground": "#303640",
+      "SectionHeader.background": "#303640"
     },
     "ProgressBar": {
       "trackColor": "#1D1D26",
@@ -234,13 +234,13 @@
       "Header.background": "backgroundColor",
       "Tab": {
         "selectedForeground": "#abb2bf",
-        "selectedBackground": "#323844"
+        "selectedBackground": "#303640"
       }
     },
     "TabbedPane": {
       "underlineColor": "accentColor",
-      "contentAreaColor": "#323844",
-      "hoverColor": "#323844"
+      "contentAreaColor": "#303640",
+      "hoverColor": "#303640"
     },
     "Table": {
       "background": "panelColor",
@@ -273,7 +273,7 @@
       "SidePanel.background": "panelColor",
       "Details.background": "backgroundColor",
       "Projects": {
-        "actions.background": "#323844"
+        "actions.background": "#303640"
       }
     }
   },
