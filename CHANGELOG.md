@@ -8,7 +8,7 @@
 - Reduced the brightness of inlay hints so they are less distracting while editing.
 - Refined popup and dialog backgrounds, borders, and contrast to better match the main theme background.
 - Cleaned up `pluginIcon.svg` (removed an unused namespace and simplified the structure).
-- Minor project fixes.
+- Updated dependencies and minor project fixes.
 
 ## [6.2.3]
 
