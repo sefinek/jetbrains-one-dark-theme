@@ -1,19 +1,21 @@
 # Contributing
 
 ## Build the plugin
-
-To build the plugin, you can use the following command:
-
+You can build the plugin with:
 ```bash
 ./gradlew buildPlugin
 ```
-
-## Publishing
-
-To publish a new version of the plugin, you can use the following command:
-
+or with npm, if you have Node.js installed:
 ```bash
-./gradlew publishPlugin -PintellijPlatformPublishingToken=$(op item get <item_id> --fields password --reveal)
+npm run build
 ```
 
-_This is only necessary if you are the maintainer of the plugin. If you aren't, why are you trying to publish it?_
+## Running and testing
+You can test the plugin with the command below. It starts a sandbox IDE with the plugin loaded.
+```bash
+.\gradlew runIde
+```
+or with npm:
+```bash
+npm run ide
+```

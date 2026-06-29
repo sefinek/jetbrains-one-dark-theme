@@ -23,6 +23,9 @@ The theme is actively maintained and continuously improved. See [CHANGELOG.md](C
 ## Marketplace
 https://plugins.jetbrains.com/plugin/32522-sefin-one-dark-theme
 
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Thanks
 If you like this improved version of the theme, consider giving the [repository a star](https://github.com/sefinek/sefin-one-dark-theme).
 For any questions or issues, please create a new [Issue](https://github.com/sefinek/sefin-one-dark-theme/issues/new).
