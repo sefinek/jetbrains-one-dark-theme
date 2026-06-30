@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/sefinek/sefin-one-dark-theme.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Sefinek",
   "type": "module",
   "scripts": {
