@@ -5,7 +5,7 @@
 - Cleaned up some project data and organizational structure.
 - Reworked source theme resources around Sefin naming, packaging, and generated Vivid variants.
 - Added an in-IDE notification with a changelog after updating the plugin.
-- Minor logo tweaks
+- Minor logo tweaks.
 
 ## [1.0.0]
 
