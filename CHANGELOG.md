@@ -1,9 +1,11 @@
 # Changelog
 
-## [1.0.1]
+## [1.1.0]
 
-- Cleaned up selected project metadata and organization.
+- Cleaned up some project data and organizational structure.
 - Reworked source theme resources around Sefin naming, packaging, and generated Vivid variants.
+- Added an in-IDE notification with a changelog after updating the plugin.
+- Minor logo tweaks
 
 ## [1.0.0]
 
@@ -15,5 +17,5 @@
 - Refreshed `pluginIcon.svg` with a cleaner, more modern version of the existing atom icon.
 - Updated dependencies and minor project fixes.
 
-[1.0.1]: https://github.com/sefinek/sefin-one-dark-theme/compare/v1.0.0...v1.0.1
+[1.1.0]: https://github.com/sefinek/sefin-one-dark-theme/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/sefinek/sefin-one-dark-theme/releases/tag/v1.0.0

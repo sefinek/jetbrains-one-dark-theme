@@ -11,7 +11,7 @@ group = providers.gradleProperty("group").get()
 version = providers.gradleProperty("pluginVersion").get()
 
 kotlin {
-    jvmToolchain(25)
+    jvmToolchain(21)
 }
 
 repositories {
@@ -72,6 +72,16 @@ changelog {
 }
 
 tasks {
+    withType<Jar> {
+        manifest {
+            attributes["Repository-Url"] = providers.gradleProperty("pluginRepositoryUrl").get()
+        }
+    }
+
+    processResources {
+        from("CHANGELOG.md")
+    }
+
     wrapper {
         gradleVersion = providers.gradleProperty("gradleVersion").get()
     }
