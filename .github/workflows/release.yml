@@ -1,0 +1,91 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: gradle
+
+      - name: Build plugin
+        run: ./gradlew buildPlugin
+
+      - name: Prepare release notes
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          version="$(awk -F '=' '/^pluginVersion[[:space:]]*=/ { gsub(/[[:space:]]/, "", $2); print $2; exit }' gradle.properties)"
+          if [[ -z "$version" ]]; then
+            echo "pluginVersion was not found in gradle.properties" >&2
+            exit 1
+          fi
+
+          tag="v$version"
+
+          awk -v version="$version" '
+            $0 == "## [" version "]" {
+              found = 1
+              next
+            }
+            found && /^## \[/ {
+              exit
+            }
+            found {
+              print
+            }
+          ' CHANGELOG.md | sed '/./,$!d' > release-notes.md
+
+          if [[ ! -s release-notes.md ]]; then
+            echo "CHANGELOG.md does not contain notes for $version" >&2
+            exit 1
+          fi
+
+          previous_tag="$(git tag --sort=-v:refname | grep -v "^${tag}$" | head -n 1 || true)"
+          if [[ -n "$previous_tag" ]]; then
+            full_changelog="https://github.com/${GITHUB_REPOSITORY}/compare/${previous_tag}...${tag}"
+          else
+            full_changelog="https://github.com/${GITHUB_REPOSITORY}/releases/tag/${tag}"
+          fi
+
+          {
+            echo
+            echo "**Full Changelog**: $full_changelog"
+          } >> release-notes.md
+
+          {
+            echo "version=$version"
+            echo "tag=$tag"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: ${{ steps.version.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          body_path: release-notes.md
+          files: build/distributions/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
