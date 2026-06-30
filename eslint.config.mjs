@@ -2,7 +2,7 @@ import js from '@eslint/js';
 import globals from 'globals';
 
 export default [
-	{ ignores: ['node_modules', '**/*.min.js', '**/*bundle*', 'build/**', 'dist/**', 'services/translations/**'] },
+	{ ignores: ['node_modules', '.gradle/**', '.intellijPlatform/**'] },
 	js.configs.recommended,
 	{
 		languageOptions: {
@@ -52,40 +52,5 @@ export default [
 			'wrap-regex': 'warn',
 			'yoda': 'error',
 		},
-	},
-	{
-		files: ['public/**/*.js'],
-		languageOptions: {
-			sourceType: 'script',
-			globals: { ...globals.browser },
-		},
-		rules: {
-			'no-redeclare': ['error', { builtinGlobals: false }],
-		},
-	},
-	{
-		files: [
-			'public/js/lib/**/*.js',
-			'public/js/terminal/**/*.js',
-			'public/js/projects/**/*.js',
-			'public/js/tools/**/*.js',
-			'public/js/generator/**/*.js',
-			'public/js/wallpaper/**/*.js',
-			'public/js/blog.js',
-			'public/js/blog-post.js',
-			'public/js/projects.js',
-			'public/js/filaments.js',
-			'public/js/gallery.js',
-			'public/js/home.js',
-			'public/js/nav.js',
-			'public/js/router.js',
-			'public/js/docs.js',
-			'public/js/dbv-stats.js',
-			'public/js/cs-surprise.js',
-			'public/js/discord-verification.js',
-			'public/js/meshcore-config.js',
-			'public/js/meshcore-kontakty.js',
-		],
-		languageOptions: { sourceType: 'module' },
-	},
+	}
 ];
