@@ -23,14 +23,14 @@
         </ul>
         <p>Recommended setup:</p>
         <ol>
-            <li>Try <b>Sefin One Dark Vivid Islands</b>.</li>
+            <li>Try <b>Sefin One Dark Vivid Islands</b>, then turn on <b>Settings > Advanced Settings > Enable Islands UI for custom themes</b>.</li>
             <li>Disable <b>Smooth Scrolling</b>.</li>
             <li>Enable <b>Compact mode</b>.</li>
-            <li>Disable <b>Settings | Editor | General | Appearance | Show hard wrap and visual guides</b>.</li>
+            <li>Turn off <b>Settings > Editor > General > Appearance > Show hard wrap and visual guides</b>.</li>
         </ol>
         <p>
             After installation, select the theme in <b>Settings | Appearance & Behavior | Appearance</b>.<br>
-            For Islands variants, enable <b>Settings | Advanced Settings | Enable Islands UI for custom themes</b>.<br>
+            For Islands variants, turn on <b>Settings > Advanced Settings > Enable Islands UI for custom themes</b>.<br>
             Visit the project repository to learn more.
         </p>
     ]]></description>
