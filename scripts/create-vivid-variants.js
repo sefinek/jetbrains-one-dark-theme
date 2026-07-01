@@ -3,11 +3,11 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
 const COLOR_MAP = {
-	'#e06c75': '#ef596f', // coral
-	'#56b6c2': '#2bbac5', // fountainBlue
-	'#98c379': '#89ca78', // green
-	'#abb2bf': '#bbbbbb', // lightWhite
-	'#c678dd': '#d55fde', // purple
+	'#E06C75': '#EF596F', // coral
+	'#56B6C2': '#2BBAC5', // fountainBlue
+	'#98C379': '#89CA78', // green
+	'#ABB2BF': '#BBBBBB', // lightWhite
+	'#C678DD': '#D55FDE', // purple
 };
 
 async function createVividVariant(inputPath, outputPath) {
