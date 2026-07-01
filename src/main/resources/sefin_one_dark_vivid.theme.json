@@ -171,7 +171,9 @@
     "EditorPane.inactiveBackground": "#242830",
 
     "EditorTabs": {
-      "underlinedTabBackground": "#3D424B"
+      "background": "#21242A",
+      "inactiveUnderlinedTabBackground": "#21242A",
+      "underlinedTabBackground": "#333841"
     },
 
     "FileColor": {
@@ -216,7 +218,7 @@
 
     "MainToolbar": {
       "inactiveBackground": "#262A33",
-      "background": "backgroundColor",
+      "background": "#21242A",
       "Dropdown": {
         "hoverBackground": "#3D424B"
       }
@@ -261,7 +263,7 @@
 
     "Panel.background": "backgroundColor",
 
-    "AlertDialog.background": "#22262E",
+    "AlertDialog.background": "#202329",
     "AlertDialog.borderColor": "#383D46",
 
     "ParameterInfo": {
@@ -353,7 +355,7 @@
       "endBackground": "accentColor"
     },
 
-    "SidePanel.background": "backgroundColor",
+    "SidePanel.background": "#21242A",
 
     "SpeedSearch": {
       "foreground": "#BBBBBB",
@@ -364,7 +366,7 @@
 
     "Settings.Spotlight.borderColor": "accentColor",
 
-    "StatusBar.background": "baseBackground",
+    "StatusBar.background": "#21242A",
 
     "TabbedPane": {
       "underlineColor": "accentColor",
@@ -423,14 +425,18 @@
 
       "Header": {
         "background": "#414855",
-        "inactiveBackground": "#21252B"
+        "inactiveBackground": "#21242A"
       },
 
       "HeaderTab": {
-        "hoverBackground": "#21252B",
+        "hoverBackground": "#21242A",
         "hoverInactiveBackground": "#3D424B",
-        "selectedBackground": "#21252B",
+        "selectedBackground": "#21242A",
         "selectedInactiveBackground": "#3D424B"
+      },
+
+      "Stripe": {
+        "background": "#21242A"
       }
     },
 

@@ -3,7 +3,7 @@
   "dark": true,
   "author": "Sefinek",
   "parentTheme": "Islands Dark",
-  "editorScheme": "/sefin_one_dark_vivid.xml",
+  "editorScheme": "/sefin_one_dark_vivid_islands.xml",
   "colors": {
     "accentColor": "#568AF2",
     "backgroundColor": "#202329",
@@ -40,13 +40,7 @@
       "arc.compact": 16,
       "borderWidth": 5,
       "borderWidth.compact": 4,
-      "borderColor": "panelColor",
-      "inactiveAlpha": 0,
-      "inactiveAlphaInStatusBar": {
-        "os.mac": 0.2,
-        "os.windows": 0,
-        "os.linux": 0.15
-      }
+      "borderColor": "panelColor"
     },
     "MainWindow.background": "backgroundColor",
     "MainWindow.Tab": {
@@ -122,7 +116,7 @@
     "EditorTabs": {
       "background": "panelColor",
       "underlinedBorderColor": "focusedBorderColor",
-      "underlinedTabBackground": "focusedBorderColor",
+      "underlinedTabBackground": "#333841",
       "underlinedTabForeground": "#BBBBBB",
       "underlineColor": "accentColor",
       "inactiveUnderlinedTabBorderColor": "borderColor",
@@ -208,7 +202,7 @@
       "shortcutForeground": "accentColor"
     },
     "Editor.Toolbar.borderColor": "#000000",
-    "EditorPane.inactiveBackground": "backgroundColor",
+    "EditorPane.inactiveBackground": "panelColor",
     "List": {
       "selectionBackground": "#4D78CC",
       "selectionForeground": "#FFFFFF"
@@ -250,10 +244,6 @@
       "gridColor": "#5C6370",
       "selectionBackground": "#3D424B"
     },
-    "TextField": {
-      "background": "#23272F",
-      "selectionBackground": "#414855"
-    },
     "Tree": {
       "selectionBackground": "#4269B9",
       "modifiedItemForeground": "accentColor",
@@ -271,7 +261,7 @@
       "SearchField.background": "backgroundColor",
       "separatorColor": "panelColor"
     },
-    "AlertDialog.background": "#22262E",
+    "AlertDialog.background": "#202329",
     "AlertDialog.borderColor": "#383D46",
     "WelcomeScreen": {
       "borderColor": "borderColor",
