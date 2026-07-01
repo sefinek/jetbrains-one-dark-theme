@@ -53,7 +53,6 @@ class SefinOneDarkUpdateNotifier : ProjectActivity {
         NotificationGroupManager.getInstance()
             .getNotificationGroup(UPDATES_GROUP_ID)
             .createNotification(title, content, NotificationType.INFORMATION)
-            .setImportant(true)
             .apply {
                 if (repositoryUrl != null) {
                     addAction(

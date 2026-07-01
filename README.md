@@ -12,19 +12,18 @@ The theme is actively maintained and continuously improved. See [CHANGELOG.md](C
 ![Code example](https://github.com/user-attachments/assets/0928bbf2-3540-4b77-a2ee-8ad85cde3e55)
 
 ## Original Project
-The original author publicly described his approach as liberal.
-Despite that, comments linking to this project in a [related issue](https://github.com/one-dark/jetbrains-one-dark-theme/issues/397) were removed.
+The original author publicly described his approach as liberal. Despite that, comments linking to this project in a [related issue](https://github.com/one-dark/jetbrains-one-dark-theme/issues/397) were removed.
 I recommend using this project if you want a version developed in a more open way.
 
 ## Installation
-1. Press `CTRL + ALT + S` (settings). Go to `Plugins`. Search for `Sefin One Dark Theme` and install it.
+1. Press `Ctrl+Alt+S` to open Settings. Go to `Plugins`. Search for `Sefin One Dark Theme` and install it.
 2. Go to `Settings > Appearance & Behavior > Appearance` and select one of the new themes from the list.
-3. Enable `Settings > Advanced Settings > Enable Islands UI for custom themes` if you use an Islands variant.
+3. Turn on `Settings > Advanced Settings > Enable Islands UI for custom themes` if you use an Islands variant.
 
 ## Recommended Setup
 - Try `Sefin One Dark Vivid Islands`, then turn on `Settings > Advanced Settings > Enable Islands UI for custom themes`.
-- Disable `Smooth Scrolling`.
-- Enable `Compact mode`.
+- Turn off `Smooth Scrolling`.
+- Turn on `Compact mode`.
 - Turn off `Settings > Editor > General > Appearance > Show hard wrap and visual guides`.
 - Install [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons).
 
