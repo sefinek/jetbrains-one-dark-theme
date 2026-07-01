@@ -21,8 +21,8 @@ I recommend using this project if you want a version developed in a more open wa
 2. Go to `Settings > Appearance & Behavior > Appearance` and select one of the new themes from the list.
 3. Enable `Settings > Advanced Settings > Enable Islands UI for custom themes` if you use an Islands variant.
 
-## Recommendations
-1. Use `Sefin One Dark Vivid Islands` if you like it.
+## Recommended setup
+1. Try `Sefin One Dark Vivid Islands`.
 2. Disable `Smooth Scrolling`.
 3. Enable `Compact mode`.
 4. Disable `Settings > Editor > General > Appearance > Show hard wrap and visual guides`.
