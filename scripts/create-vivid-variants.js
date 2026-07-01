@@ -19,10 +19,12 @@ async function createVividVariant(inputPath, outputPath) {
 	}
 
 	// Replace theme references
+	content = content.replaceAll('sefin_one_dark_islands.xml', 'sefin_one_dark_vivid_islands.xml');
 	content = content.replaceAll('sefin_one_dark.xml', 'sefin_one_dark_vivid.xml');
 	content = content.replaceAll('"name": "Sefin One Dark Islands"', '"name": "Sefin One Dark Vivid Islands"');
 	content = content.replaceAll('"name": "Sefin One Dark"', '"name": "Sefin One Dark Vivid"');
 	content = content.replaceAll('name="Sefin One Dark"', 'name="Sefin One Dark Vivid"');
+	content = content.replaceAll('name="Sefin One Dark Islands"', 'name="Sefin One Dark Vivid Islands"');
 
 	await writeFile(
 		new URL(`../src/main/resources/${outputPath}`, import.meta.url),
@@ -42,6 +44,10 @@ const themes = [
 	{
 		input: 'sefin_one_dark.xml',
 		output: 'sefin_one_dark_vivid.xml',
+	},
+	{
+		input: 'sefin_one_dark_islands.xml',
+		output: 'sefin_one_dark_vivid_islands.xml',
 	},
 ];
 
