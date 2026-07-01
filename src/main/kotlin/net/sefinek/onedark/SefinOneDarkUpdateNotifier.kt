@@ -1,7 +1,7 @@
 package net.sefinek.onedark
 
 import com.intellij.ide.BrowserUtil
-import com.intellij.ide.plugins.PluginManagerCore
+import com.intellij.ide.plugins.PluginManager
 import com.intellij.ide.util.PropertiesComponent
 import com.intellij.notification.NotificationAction
 import com.intellij.notification.NotificationGroupManager
@@ -111,7 +111,7 @@ class SefinOneDarkUpdateNotifier : ProjectActivity {
     }
 
     private fun getCurrentPluginInfo(): PluginInfo? {
-        val descriptor = PluginManagerCore.getPlugin(PluginId.getId(PLUGIN_ID)) ?: return null
+        val descriptor = PluginManager.getPlugin(PluginId.getId(PLUGIN_ID)) ?: return null
 
         return PluginInfo(
             version = descriptor.version ?: return null,
