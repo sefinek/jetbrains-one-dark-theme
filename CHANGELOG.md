@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1]
+
+- Refined the background colors of the editor, toolbars, editor tabs, dialog windows, and project panel.
+- Added separate editor color schemes for the Islands variants so the editor remains consistent with the panel colors.
+- Unified the HEX color notation.
+- Changed the `themeProvider` identifiers to new custom UUIDs. You need to select the Sefin One Dark theme again in settings. Make sure the Editor Color Scheme matches the selected theme; otherwise, the editor appearance may become inconsistent.
+- Minor project improvements.
+
 ## [1.1.0]
 
 - Cleaned up some project data and organizational structure.
@@ -17,5 +25,6 @@
 - Refreshed `pluginIcon.svg` with a cleaner, more modern version of the existing atom icon.
 - Updated dependencies and minor project fixes.
 
+[1.1.1]: https://github.com/sefinek/sefin-one-dark-theme/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/sefinek/sefin-one-dark-theme/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/sefinek/sefin-one-dark-theme/releases/tag/v1.0.0

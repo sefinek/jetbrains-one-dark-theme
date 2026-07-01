@@ -1,6 +1,6 @@
 {
   "name": "sefin-one-dark-theme",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Sefin One Dark Theme",
   "homepage": "https://github.com/sefinek/sefin-one-dark-theme",
   "bugs": {
@@ -14,12 +14,12 @@
   "author": "Sefinek",
   "type": "module",
   "scripts": {
-    "build": ".\\gradlew.bat buildPlugin",
-    "ide": ".\\gradlew.bat runIde",
+    "build": ".\\gradlew buildPlugin",
+    "ide": ".\\gradlew runIde",
     "m": "ncu -u && npm install && npm update",
     "pull": "git pull origin main",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify": ".\\gradlew.bat verifyPlugin"
+    "verify": ".\\gradlew verifyPlugin"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
