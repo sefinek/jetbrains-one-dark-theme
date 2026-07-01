@@ -194,7 +194,7 @@
       "Advertiser.borderColor": "backgroundColor",
       "Advertiser.foreground": "#868A91",
       "paintBorder": true,
-      "borderColor": "#3D424B",
+      "borderColor": "#383D46",
       "Toolbar.background": "backgroundColor"
     },
     "CompletionPopup": {
@@ -250,8 +250,12 @@
       "gridColor": "#5C6370",
       "selectionBackground": "#3D424B"
     },
+    "TextField": {
+      "background": "#23272F",
+      "selectionBackground": "#414855"
+    },
     "Tree": {
-      "selectionBackground": "#4D78CC",
+      "selectionBackground": "#4269B9",
       "modifiedItemForeground": "accentColor",
       "selectionInactiveForeground": "foregroundColor",
       "rowHeight": 20
@@ -268,7 +272,7 @@
       "separatorColor": "panelColor"
     },
     "AlertDialog.background": "#22262E",
-    "AlertDialog.borderColor": "#3D424B",
+    "AlertDialog.borderColor": "#383D46",
     "WelcomeScreen": {
       "borderColor": "borderColor",
       "separatorColor": "#2C313A",

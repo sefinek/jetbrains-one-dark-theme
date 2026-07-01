@@ -157,10 +157,10 @@
     },
 
     "Editor": {
-      "background": "#262A33",
+      "background": "#242830",
       "foreground": "#BBBBBB",
       "SearchField": {
-        "background": "#262A33"
+        "background": "#242830"
       },
       "shortcutForeground": "accentColor",
       "ToolTip": {
@@ -168,7 +168,7 @@
       }
     },
 
-    "EditorPane.inactiveBackground": "#262A33",
+    "EditorPane.inactiveBackground": "#242830",
 
     "EditorTabs": {
       "underlinedTabBackground": "#3D424B"
@@ -262,7 +262,7 @@
     "Panel.background": "backgroundColor",
 
     "AlertDialog.background": "#22262E",
-    "AlertDialog.borderColor": "#3D424B",
+    "AlertDialog.borderColor": "#383D46",
 
     "ParameterInfo": {
       "background": "#3D424B",
@@ -306,8 +306,8 @@
     "Popup": {
       "background": "#262A33",
       "paintBorder": true,
-      "borderColor": "#3D424B",
-      "Toolbar.borderColor": "#3D424B",
+      "borderColor": "#383D46",
+      "Toolbar.borderColor": "#383D46",
       "Header.activeBackground": "#414855",
       "Header.inactiveBackground": "#2C313A",
       "Advertiser": {
@@ -357,7 +357,7 @@
 
     "SpeedSearch": {
       "foreground": "#BBBBBB",
-      "borderColor": "#3D424B",
+      "borderColor": "#383D46",
       "background": "#3D424B",
       "errorForeground": "#EF596F"
     },
@@ -396,7 +396,7 @@
     },
 
     "TextField": {
-      "background": "#262A33",
+      "background": "#23272F",
       "selectionBackground": "#414855"
     },
 
@@ -405,7 +405,7 @@
       "onBackground": "accentColor",
       "offForeground": "#9F9FA6",
       "offBackground": "#3D424B",
-      "borderColor":  "#3D424B",
+      "borderColor":  "#383D46",
       "buttonColor": "#5C6370"
     },
 
@@ -414,7 +414,7 @@
     },
 
     "ToolWindow": {
-      "background": "backgroundColor",
+      "background": "#23272F",
       "Button": {
         "hoverBackground": "#303640",
         "selectedBackground": "#3D424B",
@@ -423,13 +423,13 @@
 
       "Header": {
         "background": "#414855",
-        "inactiveBackground": "#303640"
+        "inactiveBackground": "#21252B"
       },
 
       "HeaderTab": {
-        "hoverBackground": "#303640",
+        "hoverBackground": "#21252B",
         "hoverInactiveBackground": "#3D424B",
-        "selectedBackground": "#303640",
+        "selectedBackground": "#21252B",
         "selectedInactiveBackground": "#3D424B"
       }
     },
@@ -440,7 +440,7 @@
     },
 
     "Tree": {
-      "selectionBackground": "#4D78CC",
+      "selectionBackground": "#4269B9",
       "modifiedItemForeground": "accentColor",
       "selectionInactiveForeground": "foregroundColor",
       "rowHeight": 20
