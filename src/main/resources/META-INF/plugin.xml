@@ -8,11 +8,11 @@
 
     <description><![CDATA[
         <p>
-            A polished One Dark-inspired theme for JetBrains IDEs, refined and maintained as an independent project.
+            A polished One Dark-inspired theme for JetBrains IDEs, developed and maintained as an independent project.
         </p>
         <p>
-            The theme preserves the familiar One Dark feel with careful maintenance, clean packaging, and Sefin-branded variants.
-            It was designed for calm work during long coding sessions and to look especially good on OLED and QD-OLED displays.
+            The theme preserves the familiar One Dark feel while adding a refined color palette, improved interface readability, and a more consistent IDE appearance.
+            Its darker, cooler palette works well during long coding sessions, especially on OLED and QD-OLED displays.
         </p>
         <p>Available themes:</p>
         <ul>
@@ -21,9 +21,17 @@
             <li>Sefin One Dark Islands</li>
             <li>Sefin One Dark Vivid Islands</li>
         </ul>
+        <p>Recommendations:</p>
+        <ol>
+            <li>Try <b>Sefin One Dark Vivid Islands</b>.</li>
+            <li>Disable <b>Smooth Scrolling</b>.</li>
+            <li>Enable <b>Compact mode</b>.</li>
+            <li>Disable <b>Settings | Editor | General | Appearance | Show hard wrap and visual guides</b>.</li>
+        </ol>
         <p>
-            After installation, select the theme in <em>Settings | Appearance & Behavior | Appearance</em>.<br>
-            For Islands variants, enable <em>Settings | Advanced Settings | Enable Islands UI for custom themes</em>.
+            After installation, select the theme in <b>Settings | Appearance & Behavior | Appearance</b>.<br>
+            For Islands variants, enable <b>Settings | Advanced Settings | Enable Islands UI for custom themes</b>.<br>
+            Visit the project repository to learn more.
         </p>
     ]]></description>
 
