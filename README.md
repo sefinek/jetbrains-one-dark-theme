@@ -11,7 +11,7 @@ The theme is actively maintained and continuously improved. See [CHANGELOG.md](C
 
 ![Code example](https://github.com/user-attachments/assets/0928bbf2-3540-4b77-a2ee-8ad85cde3e55)
 
-## Original project
+## Original Project
 The original author publicly described his approach as liberal.
 Despite that, comments linking to this project in a [related issue](https://github.com/one-dark/jetbrains-one-dark-theme/issues/397) were removed.
 I recommend using this project if you want a version developed in a more open way.
@@ -21,7 +21,7 @@ I recommend using this project if you want a version developed in a more open wa
 2. Go to `Settings > Appearance & Behavior > Appearance` and select one of the new themes from the list.
 3. Enable `Settings > Advanced Settings > Enable Islands UI for custom themes` if you use an Islands variant.
 
-## Recommended setup
+## Recommended Setup
 - Try `Sefin One Dark Vivid Islands`.
 - Disable `Smooth Scrolling`.
 - Enable `Compact mode`.
