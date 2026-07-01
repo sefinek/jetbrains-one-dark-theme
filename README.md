@@ -22,11 +22,11 @@ I recommend using this project if you want a version developed in a more open wa
 3. Enable `Settings > Advanced Settings > Enable Islands UI for custom themes` if you use an Islands variant.
 
 ## Recommended setup
-1. Try `Sefin One Dark Vivid Islands`.
-2. Disable `Smooth Scrolling`.
-3. Enable `Compact mode`.
-4. Disable `Settings > Editor > General > Appearance > Show hard wrap and visual guides`.
-5. Install [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons).
+- Try `Sefin One Dark Vivid Islands`.
+- Disable `Smooth Scrolling`.
+- Enable `Compact mode`.
+- Disable `Settings > Editor > General > Appearance > Show hard wrap and visual guides`.
+- Install [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons).
 
 ## Marketplace
 https://plugins.jetbrains.com/plugin/32522-sefin-one-dark-theme
