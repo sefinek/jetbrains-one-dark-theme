@@ -1,10 +1,12 @@
 package net.sefinek.onedark
 
 import com.intellij.ide.BrowserUtil
+import com.intellij.ide.plugins.PluginManagerCore
 import com.intellij.ide.util.PropertiesComponent
 import com.intellij.notification.NotificationAction
 import com.intellij.notification.NotificationGroupManager
 import com.intellij.notification.NotificationType
+import com.intellij.openapi.extensions.PluginId
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.startup.ProjectActivity
 import com.intellij.openapi.ui.DialogWrapper
@@ -15,8 +17,8 @@ import javax.swing.Action
 import javax.swing.JComponent
 import javax.swing.JEditorPane
 import javax.swing.JScrollPane
-import java.util.jar.Manifest
 
+private const val PLUGIN_ID = "net.sefinek.one-dark-theme"
 private const val VERSION_PROPERTY = "net.sefinek.one-dark-theme.lastShownVersion"
 private const val UPDATES_GROUP_ID = "Sefin One Dark Theme Updates"
 
@@ -109,24 +111,12 @@ class SefinOneDarkUpdateNotifier : ProjectActivity {
     }
 
     private fun getCurrentPluginInfo(): PluginInfo? {
-        val manifests = javaClass.classLoader.getResources("META-INF/MANIFEST.MF")
+        val descriptor = PluginManagerCore.getPlugin(PluginId.getId(PLUGIN_ID)) ?: return null
 
-        while (manifests.hasMoreElements()) {
-            val manifest =
-                manifests.nextElement().openStream().use {
-                    Manifest(it)
-                }
-
-            val attributes = manifest.mainAttributes
-            if (attributes.getValue("Build-Plugin") == "IntelliJ Platform Gradle Plugin") {
-                return PluginInfo(
-                    version = attributes.getValue("Version") ?: return null,
-                    repositoryUrl = attributes.getValue("Repository-Url")?.trim()?.takeIf { it.isNotEmpty() },
-                )
-            }
-        }
-
-        return null
+        return PluginInfo(
+            version = descriptor.version ?: return null,
+            repositoryUrl = descriptor.vendorUrl?.trim()?.takeIf { it.isNotEmpty() },
+        )
     }
 
     private class ChangelogDialog(project: Project, changelogItems: List<String>) : DialogWrapper(project) {
