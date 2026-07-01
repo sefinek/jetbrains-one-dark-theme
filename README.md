@@ -26,6 +26,7 @@ I recommend using this project if you want a version developed in a more open wa
 2. Disable `Smooth Scrolling`.
 3. Enable `Compact mode`.
 4. Disable `Settings > Editor > General > Appearance > Show hard wrap and visual guides`.
+5. Install [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons).
 
 ## Marketplace
 https://plugins.jetbrains.com/plugin/32522-sefin-one-dark-theme
