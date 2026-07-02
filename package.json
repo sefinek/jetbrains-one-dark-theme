@@ -1,6 +1,6 @@
 {
   "name": "sefin-one-dark-theme",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Sefin One Dark Theme",
   "homepage": "https://github.com/sefinek/sefin-one-dark-theme",
   "bugs": {
@@ -15,6 +15,7 @@
   "type": "module",
   "scripts": {
     "build": ".\\gradlew buildPlugin",
+    "generate:vivid": "node scripts/create-vivid-variants.js",
     "ide": ".\\gradlew runIde",
     "m": "ncu -u && npm install && npm update",
     "pull": "git pull origin main",

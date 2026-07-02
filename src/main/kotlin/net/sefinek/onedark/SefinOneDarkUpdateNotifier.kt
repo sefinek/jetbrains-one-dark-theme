@@ -17,7 +17,6 @@ import javax.swing.JComponent
 import javax.swing.JEditorPane
 import javax.swing.JScrollPane
 
-private const val REPOSITORY_URL = "https://github.com/sefinek/sefin-one-dark-theme"
 private const val VERSION_PROPERTY = "net.sefinek.one-dark-theme.lastShownVersion"
 private const val UPDATES_GROUP_ID = "Sefin One Dark Theme Updates"
 
@@ -60,8 +59,7 @@ class SefinOneDarkUpdateNotifier : ProjectActivity {
                         BrowserUtil.browse(repositoryUrl)
                     },
                 )
-            }
-            .apply {
+
                 if (changelogItems.isNotEmpty()) {
                     addAction(
                         NotificationAction.createSimple("Show changelog") {
@@ -69,8 +67,7 @@ class SefinOneDarkUpdateNotifier : ProjectActivity {
                         },
                     )
                 }
-            }
-            .apply {
+
                 if (previousVersion == null) {
                     addAction(
                         NotificationAction.createSimple("Open changelog") {
@@ -110,25 +107,17 @@ class SefinOneDarkUpdateNotifier : ProjectActivity {
     private fun getCurrentPluginInfo(): PluginInfo? {
         val manifests = javaClass.classLoader.getResources("META-INF/MANIFEST.MF")
 
-        while (manifests.hasMoreElements()) {
-            val manifest =
-                manifests.nextElement().openStream().use {
-                    Manifest(it)
-                }
-
-            val attributes = manifest.mainAttributes
+        for (manifestUrl in manifests) {
+            val attributes = manifestUrl.openStream().use { Manifest(it) }.mainAttributes
             if (attributes.getValue("Build-Plugin") == "IntelliJ Platform Gradle Plugin") {
                 return PluginInfo(
                     version = attributes.getValue("Version") ?: return null,
-                    repositoryUrl = REPOSITORY_URL,
+                    repositoryUrl = attributes.getValue("Repository-Url") ?: return null,
                 )
             }
         }
 
-        return PluginInfo(
-            version = javaClass.`package`.implementationVersion ?: return null,
-            repositoryUrl = REPOSITORY_URL,
-        )
+        return null
     }
 
     private class ChangelogDialog(project: Project, changelogItems: List<String>) : DialogWrapper(project) {
@@ -162,7 +151,6 @@ class SefinOneDarkUpdateNotifier : ProjectActivity {
 
         override fun createActions(): Array<Action> = arrayOf(okAction)
     }
-
 }
 
 private data class PluginInfo(

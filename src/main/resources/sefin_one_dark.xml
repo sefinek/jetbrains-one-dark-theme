@@ -2418,10 +2418,5 @@
         <option name="FOREGROUND" value="#E06C75"/>
       </value>
     </option>
-    <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
-      <value>
-        <option name="FOREGROUND" value="#E5C07B" />
-      </value>
-    </option>
   </attributes>
 </scheme>
