@@ -3,6 +3,8 @@
 ## [1.1.2]
 
 - Removed a duplicate color entry that caused incorrect text rendering in template languages.
+- Removed unused color definitions from the Islands variant.
+- Unified HEX color notation and tag formatting across all theme files.
 - Minor optimizations in the Kotlin file.
 
 ## [1.1.1]
